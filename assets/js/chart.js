@@ -450,6 +450,55 @@ var long3chart = new Chart(long3, {
     }
 });
 
+var assignment = document.getElementById('risk-assigment').getContext('2d');
+var assignmentchart = new Chart(assignment, {
+    // The type of chart we want to create
+    type: 'bar',
+
+    // The data for our dataset
+    data: {
+      labels: ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"],
+      datasets: [{
+        label: '',
+        data: [20, 18, 15, 12, 23, 36, 23, 34],
+        backgroundColor: '#5CC0FF',
+        borderDash: [10,10]
+      }],
+    },
+
+    // Configuration options go here
+    options: {
+      cornerRadius: 20, 
+      //Default: false; if true, this would round all corners of final box;
+      fullCornerRadius: false, 
+      //Default: false; if true, this rounds each box in the stack instead of only final box;
+      stackedRounded: false,
+      elements: {
+        point: {
+          radius: 25,
+          hoverRadius: 35,
+          pointStyle: 'rectRounded',
+
+        }
+      },
+      responsive: true,
+      scales: {
+        xAxes: [{
+            gridLines: {
+                offsetGridLines: false,
+                display: false,
+            },
+            barPercentage: 0.6
+        }],
+        yAxes: [{
+          gridLines: {
+            borderDash: [5,5]
+          }
+        }] 
+      }
+    }
+});
+
 var Headcount3 = document.getElementById('Headcount3').getContext('2d');
 var Headcountchart3 = new Chart(Headcount3, {
     // The type of chart we want to create
@@ -620,6 +669,80 @@ var chartline3chart = new Chart(chartline3, {
 
 var chartline4 = document.getElementById('chart-line-4').getContext('2d');
 var chartline4chart = new Chart(chartline4, {
+    // The type of chart we want to create
+    type: 'line',
+
+    // The data for our dataset
+    data: {
+      labels: ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"],
+      datasets: [{
+        label: '',
+        data: [20, 18, 22, 22, 23, 19, 23, 24],
+        pointStrokeColor: "#fff",
+        backgroundColor: "rgba(240,80,80,0.2)",
+        pointColor: "rgba(220,220,220,1)",
+        borderColor: "#F05050"
+      }],
+    },
+
+    // Configuration options go here
+    options: {
+      responsive: true,
+      scales: {
+        xAxes: [{
+            gridLines: {
+                offsetGridLines: false,
+                display: false,
+            }
+        }],
+        yAxes: [{
+          gridLines: {
+            borderDash: [5,5]
+          }
+        }] 
+      }
+    }
+});
+
+var employee = document.getElementById('employee').getContext('2d');
+var employeechart = new Chart(employee, {
+    // The type of chart we want to create
+    type: 'line',
+
+    // The data for our dataset
+    data: {
+      labels: ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"],
+      datasets: [{
+        label: '',
+        data: [20, 18, 22, 22, 23, 19, 23, 24],
+        pointStrokeColor: "#fff",
+        backgroundColor: "rgba(240,80,80,0.2)",
+        pointColor: "rgba(220,220,220,1)",
+        borderColor: "#F05050"
+      }],
+    },
+
+    // Configuration options go here
+    options: {
+      responsive: true,
+      scales: {
+        xAxes: [{
+            gridLines: {
+                offsetGridLines: false,
+                display: false,
+            }
+        }],
+        yAxes: [{
+          gridLines: {
+            borderDash: [5,5]
+          }
+        }] 
+      }
+    }
+});
+
+var employee2 = document.getElementById('employee2').getContext('2d');
+var employeechart2 = new Chart(employee2, {
     // The type of chart we want to create
     type: 'line',
 
