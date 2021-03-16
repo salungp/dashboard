@@ -27,7 +27,7 @@ body {
 	position: relative;
 }
 
-.sidebar-toggle {
+.sidebar-toggle-button {
 	background: transparent;
 	border: none;
 	position: absolute;
@@ -36,12 +36,12 @@ body {
 	transform: translateY(-50%);
 }
 
-.sidebar-toggle:active {
+.sidebar-toggle-button:active {
 	outline: none;
 }
 
 .sidebar-logo img {
-	width: 60px;
+	width: 100px;
 	object-fit: contain;
 }
 
@@ -97,7 +97,7 @@ body {
 
 .link-item {
 	text-decoration: none;
-	margin-right: 46px;
+	margin-right: 36px;
 }
 
 .link-item img {
@@ -453,4 +453,53 @@ body {
   opacity: 0;
   width: 0;
   height: 0;
+}
+
+.sidebar, .content {
+	transition: .4s ease-in-out;
+}
+
+.sidebar-hide {
+	margin-left: -18%;
+	position: relative;
+}
+
+.content-expand {
+	width: 100%;
+}
+
+.content-toggle {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 30px;
+	width: 24px;
+	border-top-right-radius: 12px;
+	border-bottom-right-radius: 12px;
+	background: #ffffff;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.content-toggle img {
+	width: 12px;
+	height: 12px;
+	object-fit: contain;
+}
+
+.conf-button {
+	border-radius: 50%;
+	width: 36px;
+	height: 36px;
+	border: none;
+	cursor: pointer;
+	transition: .3s ease-in-out;
+	background: transparent;
+}
+
+.conf-button:hover {
+	background: #f7f7f7;
 }

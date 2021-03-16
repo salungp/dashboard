@@ -260,24 +260,28 @@ Chart.elements.Rectangle.prototype.draw = function() {
   }
 };
 
+function makeChart(id, obj) {
+  return new Chart(id, obj);
+}
+
 var Headcount = document.getElementById('Headcount').getContext('2d');
 var Headcount2 = document.getElementById('Headcount2').getContext('2d');
-var Headcountchart = new Chart(Headcount, {
-    // The type of chart we want to create
-    type: 'pie',
+var Headcountchart = makeChart(Headcount, {
+  // The type of chart we want to create
+  type: 'pie',
 
-    // The data for our dataset
-    data: {
-      datasets: [{
-          data: [10, 20, 30, 15, 60, 10],
-          backgroundColor: ['#0FAAC0', '#7A50F2', '#FF4918', '#FE7D15', '#FFAA00', '#81C91D']
-      }],
-    },
+  // The data for our dataset
+  data: {
+    datasets: [{
+        data: [10, 20, 30, 15, 60, 10],
+        backgroundColor: ['#0FAAC0', '#7A50F2', '#FF4918', '#FE7D15', '#FFAA00', '#81C91D']
+    }],
+  },
 
-    // Configuration options go here
-    options: {
-      responsive: true
-    }
+  // Configuration options go here
+  options: {
+    responsive: true
+  }
 });
 
 var Headcountchart2 = new Chart(Headcount2, {
@@ -650,3 +654,8 @@ var chartline4chart = new Chart(chartline4, {
       }
     }
 });
+
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
