@@ -741,41 +741,31 @@ var employeechart = new Chart(employee, {
     }
 });
 
-var employee2 = document.getElementById('employee2').getContext('2d');
-var employeechart2 = new Chart(employee2, {
-    // The type of chart we want to create
-    type: 'line',
-
-    // The data for our dataset
-    data: {
-      labels: ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"],
-      datasets: [{
-        label: '',
-        data: [20, 18, 22, 22, 23, 19, 23, 24],
-        pointStrokeColor: "#fff",
-        backgroundColor: "rgba(240,80,80,0.2)",
-        pointColor: "rgba(220,220,220,1)",
-        borderColor: "#F05050"
-      }],
-    },
-
-    // Configuration options go here
-    options: {
-      responsive: true,
-      scales: {
-        xAxes: [{
-            gridLines: {
-                offsetGridLines: false,
-                display: false,
-            }
-        }],
-        yAxes: [{
-          gridLines: {
-            borderDash: [5,5]
-          }
-        }] 
+var employee2 = document.getElementById("employee2");
+var employee2chart = new Chart(employee2, {
+  type: "doughnut",
+  data: {
+    labels: ["Red"],
+    datasets: [
+      {
+        label: ["# of Votes"],
+        data: [45, 55],
+        backgroundColor: ["rgba(255,99,132,1)"],
+        borderWidth: 1
       }
+    ]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    circumference: Math.PI + 1,
+    rotation: -Math.PI - 0.5,
+    cutoutPercentage: 64,
+
+    onClick(...args) {
+      console.log(args);
     }
+  }
 });
 
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))

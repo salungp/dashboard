@@ -134,7 +134,7 @@
 
       <div class="sidebar-body position-relative"
         style="padding-bottom: 20px;margin-top: 40px;border-bottom: 1px solid rgba(0,0,0,.1);padding-left: 20px;padding-right: 20px">
-        <!-- <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center">
           <img src="assets/images/main-profile.png" style="width: 86px;object-fit: contain;">
         </div>
 
@@ -143,7 +143,7 @@
         </button>
 
         <h3 class="text-center" style="font-size: 18px;margin-top: 20px;">Samantha</h3>
-        <div class="text-center sub-text">Your profile 77% complete</div> -->
+        <div class="text-center sub-text" style="margin-bottom: 16px">Your profile 77% complete</div>
         <form>
           <input type="text" name="search" class="form-control form-control-mod" placeholder="Search...">
         </form>
@@ -238,24 +238,59 @@
         <h2 class="header-title">Dashboard</h2>
 
         <div class="header-right">
-          <a href="#" class="link-item">
-            <img src="assets/icons/feather_box.svg">
-            <span>Debbmartin Nigeria Limited</span>
-          </a>
+          <div class="dropdown d-inline-block">
+            <button class="link-item dropdown-toggle" id="my-actions-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="assets/icons/feather_box.svg">
+              <span>Debbmartin Nigeria Limited</span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="my-actions-dropdown">
+              <a class="dropdown-item" href="#">All Branches</a>
+              <a class="dropdown-item" href="#">Portugal</a>
+            </div>
+          </div>
 
-          <a href="#" class="link-item">
-            <img src="assets/icons/feather_user.svg">
-            <span>Admin</span>
-          </a>
+          <div class="dropdown d-inline-block">
+            <button class="link-item dropdown-toggle" id="my-actions-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="assets/icons/feather_user.svg">
+              <span>Admin</span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="my-actions-dropdown" style="min-width: 230px">
+              <div class="dropdown-top p-3">
+                <div class="d-flex justify-content-center">
+                  <img src="assets/images/main-profile.png" style="width: 86px;object-fit: contain;">
+                </div>
+                <h3 class="text-center" style="font-size: 18px;margin-top: 20px;">Samantha</h3>
+              </div>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Update Profile</a>
+              <a class="dropdown-item" href="#">Logout</a>
+            </div>
+          </div>
 
-          <a href="#" class="link-item">
-            <img src="assets/icons/feather_flag.svg">
-            <span>Languanges</span>
-          </a>
+          <div class="dropdown d-inline-block">
+            <button class="link-item dropdown-toggle" id="my-actions-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="assets/icons/feather_flag.svg">
+              <span>Languanges</span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="my-actions-dropdown">
+              <a class="dropdown-item" href="#">English</a>
+              <a class="dropdown-item" href="#">Portugal</a>
+              <a class="dropdown-item" href="#">Arabian</a>
+              <a class="dropdown-item" href="#">Spanyol</a>
+              <a class="dropdown-item" href="#">Indonesian</a>
+            </div>
+          </div>
 
-          <a href="#" class="link-item">
-            <img src="assets/icons/notification.svg">
-          </a>
+          <div class="dropdown d-inline-block">
+            <button class="link-item conf-button dropdown-toggle" id="my-actions-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="assets/icons/notification.svg">
+            </button>
+            <div class="dropdown-menu" aria-labelledby="my-actions-dropdown" style="min-width: 230px">
+              <h6 class="dropdown-header">Notification</h6>
+              <a class="dropdown-item" href="#">Some fixing layout</a>
+              <a class="dropdown-item" href="#">Creating Ilustration</a>
+            </div>
+          </div>
           <a href="#" class="link-item" style="margin: 0">
             <img src="assets/icons/feather_book.svg">
           </a>
@@ -290,9 +325,15 @@
                   <span>My Actions</span>
                 </div>
 
-                <button class="conf-button">
-                  <img src="assets/icons/feather_settings.svg" />
-                </button>
+                <div class="dropdown">
+                  <button class="conf-button dropdown-toggle" id="my-actions-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/icons/feather_settings.svg" />
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="my-actions-dropdown">
+                    <a class="dropdown-item" href="#">Configuration</a>
+                    <a class="dropdown-item" href="#">Help</a>
+                  </div>
+                </div>
               </div>
 
               <div class="mod-body">
@@ -377,9 +418,15 @@
                   <span>Time At Work</span>
                 </div>
 
-                <button class="conf-button">
-                  <img src="assets/icons/feather_settings.svg" />
-                </button>
+                <div class="dropdown">
+                  <button class="conf-button dropdown-toggle" id="my-actions-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/icons/feather_settings.svg" />
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="my-actions-dropdown">
+                    <a class="dropdown-item" href="#">Configuration</a>
+                    <a class="dropdown-item" href="#">Help</a>
+                  </div>
+                </div>
               </div>
 
               <div class="mod-body">
@@ -456,9 +503,15 @@
                   <span>Latest News</span>
                 </div>
 
-                <button class="conf-button">
-                  <img src="assets/icons/feather_settings.svg" />
-                </button>
+                <div class="dropdown">
+                  <button class="conf-button dropdown-toggle" id="my-actions-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/icons/feather_settings.svg" />
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="my-actions-dropdown">
+                    <a class="dropdown-item" href="#">Configuration</a>
+                    <a class="dropdown-item" href="#">Help</a>
+                  </div>
+                </div>
               </div>
 
               <div class="mod-body">
@@ -510,9 +563,15 @@
                   <span>Quick Access</span>
                 </div>
 
-                <button class="conf-button">
-                  <img src="assets/icons/feather_settings.svg" />
-                </button>
+                <div class="dropdown">
+                  <button class="conf-button dropdown-toggle" id="my-actions-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/icons/feather_settings.svg" />
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="my-actions-dropdown">
+                    <a class="dropdown-item" href="#">Configuration</a>
+                    <a class="dropdown-item" href="#">Help</a>
+                  </div>
+                </div>
               </div>
 
               <div class="mod-body">
@@ -593,9 +652,15 @@
                   <span>Employee On Leave</span>
                 </div>
 
-                <button class="conf-button">
-                  <img src="assets/icons/feather_settings.svg" />
-                </button>
+                <div class="dropdown">
+                  <button class="conf-button dropdown-toggle" id="my-actions-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/icons/feather_settings.svg" />
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="my-actions-dropdown">
+                    <a class="dropdown-item" href="#">Configuration</a>
+                    <a class="dropdown-item" href="#">Help</a>
+                  </div>
+                </div>
               </div>
 
               <div class="mod-body">
@@ -680,9 +745,15 @@
                   <span>Headcount By Submit</span>
                 </div>
 
-                <button class="conf-button">
-                  <img src="assets/icons/feather_settings.svg" />
-                </button>
+                <div class="dropdown">
+                  <button class="conf-button dropdown-toggle" id="my-actions-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/icons/feather_settings.svg" />
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="my-actions-dropdown">
+                    <a class="dropdown-item" href="#">Configuration</a>
+                    <a class="dropdown-item" href="#">Help</a>
+                  </div>
+                </div>
               </div>
 
               <div class="mod-body">
@@ -702,9 +773,15 @@
                   <span>Latest Documents</span>
                 </div>
 
-                <button class="conf-button">
-                  <img src="assets/icons/feather_settings.svg" />
-                </button>
+                <div class="dropdown">
+                  <button class="conf-button dropdown-toggle" id="my-actions-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/icons/feather_settings.svg" />
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="my-actions-dropdown">
+                    <a class="dropdown-item" href="#">Configuration</a>
+                    <a class="dropdown-item" href="#">Help</a>
+                  </div>
+                </div>
               </div>
 
               <div class="mod-body">
@@ -759,9 +836,15 @@
                   <span>Employee in Locations</span>
                 </div>
 
-                <button class="conf-button">
-                  <img src="assets/icons/feather_settings.svg" />
-                </button>
+                <div class="dropdown">
+                  <button class="conf-button dropdown-toggle" id="my-actions-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/icons/feather_settings.svg" />
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="my-actions-dropdown">
+                    <a class="dropdown-item" href="#">Configuration</a>
+                    <a class="dropdown-item" href="#">Help</a>
+                  </div>
+                </div>
               </div>
 
               <div class="mod-body">
@@ -781,9 +864,15 @@
                   <span>Buzz Latest Post</span>
                 </div>
 
-                <button class="conf-button">
-                  <img src="assets/icons/feather_settings.svg" />
-                </button>
+                <div class="dropdown">
+                  <button class="conf-button dropdown-toggle" id="my-actions-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/icons/feather_settings.svg" />
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="my-actions-dropdown">
+                    <a class="dropdown-item" href="#">Configuration</a>
+                    <a class="dropdown-item" href="#">Help</a>
+                  </div>
+                </div>
               </div>
 
               <div class="mod-body" style="padding: 20px;">
@@ -839,9 +928,15 @@
                   <span>Performance Quick Back</span>
                 </div>
 
-                <button class="conf-button">
-                  <img src="assets/icons/feather_settings.svg" />
-                </button>
+                <div class="dropdown">
+                  <button class="conf-button dropdown-toggle" id="my-actions-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/icons/feather_settings.svg" />
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="my-actions-dropdown">
+                    <a class="dropdown-item" href="#">Configuration</a>
+                    <a class="dropdown-item" href="#">Help</a>
+                  </div>
+                </div>
               </div>
 
               <div class="mod-body">
@@ -898,9 +993,15 @@
                   <span>Job Title Based Account</span>
                 </div>
 
-                <button class="conf-button">
-                  <img src="assets/icons/feather_settings.svg" />
-                </button>
+                <div class="dropdown">
+                  <button class="conf-button dropdown-toggle" id="my-actions-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/icons/feather_settings.svg" />
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="my-actions-dropdown">
+                    <a class="dropdown-item" href="#">Configuration</a>
+                    <a class="dropdown-item" href="#">Help</a>
+                  </div>
+                </div>
               </div>
 
               <div class="mod-body">
@@ -920,9 +1021,15 @@
                   <span>Company Performance</span>
                 </div>
 
-                <button class="conf-button">
-                  <img src="assets/icons/feather_settings.svg" />
-                </button>
+                <div class="dropdown">
+                  <button class="conf-button dropdown-toggle" id="my-actions-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/icons/feather_settings.svg" />
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="my-actions-dropdown">
+                    <a class="dropdown-item" href="#">Configuration</a>
+                    <a class="dropdown-item" href="#">Help</a>
+                  </div>
+                </div>
               </div>
 
               <div class="mod-body">
@@ -942,9 +1049,15 @@
                   <span>Employee Performance</span>
                 </div>
 
-                <button class="conf-button">
-                  <img src="assets/icons/feather_settings.svg" />
-                </button>
+                <div class="dropdown">
+                  <button class="conf-button dropdown-toggle" id="my-actions-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/icons/feather_settings.svg" />
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="my-actions-dropdown">
+                    <a class="dropdown-item" href="#">Configuration</a>
+                    <a class="dropdown-item" href="#">Help</a>
+                  </div>
+                </div>
               </div>
 
               <div class="mod-body">
@@ -964,13 +1077,19 @@
                   <span>Employee Satisfation</span>
                 </div>
 
-                <button class="conf-button">
-                  <img src="assets/icons/feather_settings.svg" />
-                </button>
+                <div class="dropdown">
+                  <button class="conf-button dropdown-toggle" id="my-actions-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/icons/feather_settings.svg" />
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="my-actions-dropdown">
+                    <a class="dropdown-item" href="#">Configuration</a>
+                    <a class="dropdown-item" href="#">Help</a>
+                  </div>
+                </div>
               </div>
 
               <div class="mod-body">
-                <canvas id="employee2" width="400" height="500"></canvas>
+                <canvas id="employee2" width="400" height="400"></canvas>
               </div>
 
             </div>
@@ -986,9 +1105,15 @@
                   <span>Risk Assignment</span>
                 </div>
 
-                <button class="conf-button">
-                  <img src="assets/icons/feather_settings.svg" />
-                </button>
+                <div class="dropdown">
+                  <button class="conf-button dropdown-toggle" id="my-actions-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/icons/feather_settings.svg" />
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="my-actions-dropdown">
+                    <a class="dropdown-item" href="#">Configuration</a>
+                    <a class="dropdown-item" href="#">Help</a>
+                  </div>
+                </div>
               </div>
 
               <div class="mod-body">
@@ -1008,9 +1133,15 @@
                   <span>Employee Demographic</span>
                 </div>
 
-                <button class="conf-button">
-                  <img src="assets/icons/feather_settings.svg" />
-                </button>
+                <div class="dropdown">
+                  <button class="conf-button dropdown-toggle" id="my-actions-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/icons/feather_settings.svg" />
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="my-actions-dropdown">
+                    <a class="dropdown-item" href="#">Configuration</a>
+                    <a class="dropdown-item" href="#">Help</a>
+                  </div>
+                </div>
               </div>
 
               <div class="mod-body">
@@ -1030,9 +1161,15 @@
                   <span>Employee long of services</span>
                 </div>
 
-                <button class="conf-button">
-                  <img src="assets/icons/feather_settings.svg" />
-                </button>
+                <div class="dropdown">
+                  <button class="conf-button dropdown-toggle" id="my-actions-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/icons/feather_settings.svg" />
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="my-actions-dropdown">
+                    <a class="dropdown-item" href="#">Configuration</a>
+                    <a class="dropdown-item" href="#">Help</a>
+                  </div>
+                </div>
               </div>
 
               <div class="mod-body">
@@ -1096,9 +1233,15 @@
                   <span>Employee Turnover</span>
                 </div>
 
-                <button class="conf-button">
-                  <img src="assets/icons/feather_settings.svg" />
-                </button>
+                <div class="dropdown">
+                  <button class="conf-button dropdown-toggle" id="my-actions-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/icons/feather_settings.svg" />
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="my-actions-dropdown">
+                    <a class="dropdown-item" href="#">Configuration</a>
+                    <a class="dropdown-item" href="#">Help</a>
+                  </div>
+                </div>
               </div>
 
               <div class="mod-body">
@@ -1118,9 +1261,15 @@
                   <span>Projects</span>
                 </div>
 
-                <button class="conf-button">
-                  <img src="assets/icons/feather_settings.svg" />
-                </button>
+                <div class="dropdown">
+                  <button class="conf-button dropdown-toggle" id="my-actions-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/icons/feather_settings.svg" />
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="my-actions-dropdown">
+                    <a class="dropdown-item" href="#">Configuration</a>
+                    <a class="dropdown-item" href="#">Help</a>
+                  </div>
+                </div>
               </div>
 
               <div class="mod-body">
@@ -1184,9 +1333,15 @@
                   <span>Salary Analisys</span>
                 </div>
 
-                <button class="conf-button">
-                  <img src="assets/icons/feather_settings.svg" />
-                </button>
+                <div class="dropdown">
+                  <button class="conf-button dropdown-toggle" id="my-actions-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/icons/feather_settings.svg" />
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="my-actions-dropdown">
+                    <a class="dropdown-item" href="#">Configuration</a>
+                    <a class="dropdown-item" href="#">Help</a>
+                  </div>
+                </div>
               </div>
 
               <div class="mod-body">
@@ -1206,9 +1361,15 @@
                   <span>Goal Reports</span>
                 </div>
 
-                <button class="conf-button">
-                  <img src="assets/icons/feather_settings.svg" />
-                </button>
+                <div class="dropdown">
+                  <button class="conf-button dropdown-toggle" id="my-actions-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/icons/feather_settings.svg" />
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="my-actions-dropdown">
+                    <a class="dropdown-item" href="#">Configuration</a>
+                    <a class="dropdown-item" href="#">Help</a>
+                  </div>
+                </div>
               </div>
 
               <div class="mod-body">
@@ -1228,9 +1389,15 @@
                   <span>Todo List</span>
                 </div>
 
-                <button class="conf-button">
-                  <img src="assets/icons/feather_settings.svg" />
-                </button>
+                <div class="dropdown">
+                  <button class="conf-button dropdown-toggle" id="my-actions-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/icons/feather_settings.svg" />
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="my-actions-dropdown">
+                    <a class="dropdown-item" href="#">Configuration</a>
+                    <a class="dropdown-item" href="#">Help</a>
+                  </div>
+                </div>
               </div>
 
               <div class="mod-body">
@@ -1302,9 +1469,15 @@
                   <span>Recent Activities</span>
                 </div>
 
-                <button class="conf-button">
-                  <img src="assets/icons/feather_settings.svg" />
-                </button>
+                <div class="dropdown">
+                  <button class="conf-button dropdown-toggle" id="my-actions-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/icons/feather_settings.svg" />
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="my-actions-dropdown">
+                    <a class="dropdown-item" href="#">Configuration</a>
+                    <a class="dropdown-item" href="#">Help</a>
+                  </div>
+                </div>
               </div>
 
               <div class="mod-body">
@@ -1389,9 +1562,15 @@
                   <span>Expenses Reports</span>
                 </div>
 
-                <button class="conf-button">
-                  <img src="assets/icons/feather_settings.svg" />
-                </button>
+                <div class="dropdown">
+                  <button class="conf-button dropdown-toggle" id="my-actions-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/icons/feather_settings.svg" />
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="my-actions-dropdown">
+                    <a class="dropdown-item" href="#">Configuration</a>
+                    <a class="dropdown-item" href="#">Help</a>
+                  </div>
+                </div>
               </div>
 
               <div class="mod-body">
@@ -1411,9 +1590,15 @@
                   <span>Income Reports</span>
                 </div>
 
-                <button class="conf-button">
-                  <img src="assets/icons/feather_settings.svg" />
-                </button>
+                <div class="dropdown">
+                  <button class="conf-button dropdown-toggle" id="my-actions-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/icons/feather_settings.svg" />
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="my-actions-dropdown">
+                    <a class="dropdown-item" href="#">Configuration</a>
+                    <a class="dropdown-item" href="#">Help</a>
+                  </div>
+                </div>
               </div>
 
               <div class="mod-body">
@@ -1431,9 +1616,15 @@
                   <span>Income Reports</span>
                 </div>
 
-                <button class="conf-button">
-                  <img src="assets/icons/feather_settings.svg" />
-                </button>
+                <div class="dropdown">
+                  <button class="conf-button dropdown-toggle" id="my-actions-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/icons/feather_settings.svg" />
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="my-actions-dropdown">
+                    <a class="dropdown-item" href="#">Configuration</a>
+                    <a class="dropdown-item" href="#">Help</a>
+                  </div>
+                </div>
               </div>
 
               <div class="mod-body">
@@ -1471,9 +1662,15 @@
                   <span>Payment Reports</span>
                 </div>
 
-                <button class="conf-button">
-                  <img src="assets/icons/feather_settings.svg" />
-                </button>
+                <div class="dropdown">
+                  <button class="conf-button dropdown-toggle" id="my-actions-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/icons/feather_settings.svg" />
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="my-actions-dropdown">
+                    <a class="dropdown-item" href="#">Configuration</a>
+                    <a class="dropdown-item" href="#">Help</a>
+                  </div>
+                </div>
               </div>
 
               <div class="mod-body">
